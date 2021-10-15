@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 75px 0 0 0;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0f7afc;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(15, 122, 252, 0.2);
+}
+
+a:hover {
+    text-decoration: none;
+    color: #cf0000;
+    border-bottom-color: rgba(208, 64, 0, 0.2);
+}
+
+/*--todo--*/
+
+.todo input[type="text"] {
+    width: 330px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.todo input[type="submit"] {
+    width: 80px;
+    height: 62px;
+    background: #3F6BDE;
+    border: none; 
+    position: absolute;
+    border: 1px solid #c4c4c4;
+    border-radius: 0 5px 5px 0;
+}
+
+.todo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.todo li {
+    width: 400px;
+    height: auto;
+    border: 2px solid gray;
+    padding-top: 20px;
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fcfcfc;
+    border: 1px solid silver;
+    border-radius: 5px;	
+}
+
+.todo a {
+    float: right;
+    text-decoration: none;
+    color: red;
+}
+
+
+/*------------------------------------Header-----------------------------------------------------*/
+
+#h {
+    position: absolute;
+    top: 0;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.header__content {
+    height: 72px;
+    background-color: #ffffff;
+    margin: auto;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+.header__body {
+    display: flex;
+
+    height: 72px;
+
+    justify-content: space-between;
+}
+.header__logo {
+    margin: 0px 0 0 -1px;
+}
+.header__items {
+    display: flex;
+}
+.header__team {
+    margin: 25px 20px 0 0;
+}
+.header__vac {
+    margin: 25px 20px 0 0;
+}
+.header__todo {
+    margin: 25px 25px 0 0;
+}
+.header__game {
+    margin: 25px 25px 0 0;
+}
+.header__register {
+    margin: 25px 25px 0 0;
+}
+@media screen and (max-width: 425px) {
+    .header__vac {
+        margin: 16px 16px 0 0;
+    }
+    .header__team {
+        margin: 16px 16px 0 0;
+    }
+    .header__todo {
+        margin: 25px 25px 0 0;
+    }
+    .header__game {
+        margin: 16px 16px 0 0;
+    }
+    .header__register {
+        margin: 25px 0px 0 0;
+    }
+}
+/*------------------------------------Search-----------------------------------------------------*/
+
+.search {
+    margin: 20px auto 26px;
+    height: 50px;
+}
+.search .container {
+    display: block;
+    margin: 0 auto 0;
+}
+.search__form {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+}
+.search__form input {
+    border: none;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.5;
+}
+#search:hover{
+    text-decoration: none;
+    color: #cf0000;
+    border-bottom-color: rgba(208, 64, 0, 0.2);
+}
+
+/*------------------------------------main-----------------------------------------------------*/
+.content {
+    display: flex;
+}
+.container {
+    margin: 0px auto 100px;
+}
+body {
+    background: #fff;
+    color: #333;
+    font-family: Lato, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li * {
+    float: left;
+}
+li, h3 {
+    clear:both;
+    list-style:none;
+}
+input, button {
+    outline: none;
+}
+button {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+}
+button:hover {
+    color: #333;
+}
+#table #fio{
+    margin: 10px 0 10px;
+}
+#table button {
+    margin: 0 0 10px;
+}
+h3,
+label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+input[type="text"]:focus {
+    color: #333;
+}
+
+/* New Task */
+label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+input#new-task {
+    float: left;
+    width: 318px;
+}
+p > button:hover {
+    color: #0FC57C;
+}
+
+/* Task list */
+li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+}
+li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+    width: 226px;
+}
+li > .delete:hover {
+    color: #CF2323;
+}
+
+/* Completed */
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+    display:none;
+}
+
+ul li.editMode input[type=text] {
+    display:block;
+}
+
+ul li.editMode label {
+    display:none;
+}
+
+table {
+    border-collapse: collapse;
+}
+/*------------------------------------Footer-----------------------------------------------------*/
+.footer {
+    position: fixed;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    height: 72px;
+    background: #262626;
+}
+
+.footer__section-1 {
+    margin-left: -8px;
+}
+.section-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-1__item {
+    margin: 25px 0 12px 0;
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+.footer__section-1 a {
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .section-1 {
+        margin-top: 30px;
+        padding-bottom: 28px;
+    }
+    .section-1__item {
+        margin: 0;
+        padding: 12px 0 12px 0;
+    }
+}
+.button-up {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 24px;
+    right: 16px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.5;
+    transition: opacity 0.5s ease 0s;
+}
+
+.button-up:hover {
+    opacity: 0.9;
+    transition: opacity 0.5s ease 0s;
+}
+
+.button-up img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 425px) {
+    .button-up {
+        width: 64px;
+        height: 64px;
+    }
+}
